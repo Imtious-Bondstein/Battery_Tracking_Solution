@@ -3,9 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>BTS</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-  
+  <main id="main" class="row">
+    <!-- SIDEBAR -->
+    <section id="sidebar" class="col-2">
+      <p id="logo">Battery Tracking Solution</p>
+      <!-- NAVIGATIONS -->
+      <div id="nav-links">
+        <button>Dashboard</button>
+        <button>Location</button>
+        <button>Details</button>
+        <button>Profile</button>
+        <button>Logout</button>
+      </div>
+    </section>
+    <!-- TOPBAR -->
+    <section id="topbar" class="col-10 d-flex align-items-center justify-content-between px-4">
+        <button class="status-button">Active</button>
+      <div class="d-flex gap-2">
+        <button class="topbar-link">Home</button>
+        <button class="topbar-link">Map</button>
+        <button class="topbar-link">Random</button>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
