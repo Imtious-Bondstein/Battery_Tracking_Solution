@@ -6,6 +6,7 @@
   <title>BTS</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
 </head>
 <body>
   <main id="main" class="row">
@@ -14,22 +15,42 @@
       <p id="logo">Battery Tracking Solution</p>
       <!-- NAVIGATIONS -->
       <div id="nav-links">
-        <button>Dashboard</button>
-        <button>Location</button>
-        <button>Details</button>
-        <button>Profile</button>
-        <button>Logout</button>
+        <button class="d-flex align-items-center gap-2">
+          Dashboard 
+          <i class="bsc-apps"></i>
+        </button>
+        <button class="d-flex align-items-center gap-2">
+          Location 
+          <i class="bsc-location-pin"></i>
+        </button>
+        <button class="d-flex align-items-center gap-2">
+          Details 
+          <i class="bsc-paper-file"></i>
+        </button>
+        <button class="d-flex align-items-center gap-2">
+          Profile &#8594;      
+        </button>
+        <button>Logout &#8594;</button>
       </div>
     </section>
-    <!-- TOPBAR -->
-    <section id="topbar" class="col-10 d-flex align-items-center justify-content-between px-4">
-        <button class="status-button">Active</button>
-      <div class="d-flex gap-2">
-        <button class="topbar-link">Home</button>
-        <button class="topbar-link">Map</button>
-        <button class="topbar-link">Random</button>
+    <!-- TOPBAR & MAP -->
+    <section id="topbar" class="col-10 px-4">
+      <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between py-5">
+        <div class="d-flex align-items-center">
+          <p class="mb-0">Status : &nbsp;</p>
+          <p class="text-success fw-bold mb-0">Active</p>
+        </div>
+        <div class="d-flex gap-2 mt-3 mt-md-0">
+          <button class="topbar-link">Home</button>
+          <button class="topbar-link">Map</button>
+          <button class="topbar-link">Random</button>
+        </div>
+      </div>
+      <div class="h-75">
+        <iframe class="w-100 map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15474.716399476529!2d90.40377021023944!3d23.7635326636598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c655f3b844c7%3A0x15b5e83e709e9618!2sBondstein%20Technologies%20Limited!5e0!3m2!1sen!2sbd!4v1687338645078!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
   </main>
+  <script async src="https://basicons.xyz/embed.js"> </script>
 </body>
 </html>
